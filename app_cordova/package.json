@@ -13,11 +13,13 @@
   "author": "Apache Cordova Team",
   "license": "Apache-2.0",
   "dependencies": {
-    "cordova-support-google-services": "^1.4.0"
+    "cordova-support-google-services": "^1.4.0",
+    "countly-sdk-cordova": "git+https://github.com/Countly/countly-sdk-cordova.git"
   },
   "cordova": {
     "plugins": {
-      "cordova-plugin-whitelist": {}
+      "cordova-plugin-whitelist": {},
+      "countly-sdk-cordova": {}
     },
     "platforms": []
   },
