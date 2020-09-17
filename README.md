@@ -55,7 +55,7 @@ ionic cordova prepare (android|ios)...
 ionic cordova run (android|ios)...
 ```
 
-For Automatic device traces, you must call `Countly.applicationOnCreate();` right after your application classe `onCreate` like:
+For Automatic device traces, you must call `Countly.applicationOnCreate();` right after your application class `onCreate` like:
 ```
 public class App extends Application {
     @Override
@@ -67,6 +67,6 @@ public class App extends Application {
 }
 ```
 
-If you don't have application classe then just copy the `App.java` file from root folder of this repository and paste it in your android project src folder and add `android:name=".App"` in `AndroidManifest.xml` file. 
+If you don't have application class then just copy the `App.java` file from root folder of this repository and paste it in your android project src folder, also add `android:name=".App"` in `AndroidManifest.xml` file. 
 
 See the [Countly Cordova SDK Setup](https://support.count.ly/hc/en-us/articles/360037813011-Cordova) for the full installation guide.
