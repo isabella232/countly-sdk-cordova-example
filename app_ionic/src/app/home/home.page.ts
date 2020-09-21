@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Events } from '@ionic/angular';
+// import { Events } from '@ionic/angular';
 
 declare var PushNotification;
 declare var Countly;
@@ -11,15 +11,19 @@ declare var Countly;
 })
 export class HomePage {
 
-  constructor(public events: Events) {
-    events.subscribe('countly:notification', (notification: any, time: Date) => {
-      console.log(notification);
-    });
-  }
-  ionViewDidEnter(){
-    Countly.onNotification(function(notification: any){
-      this.events.publish('countly:notification', notification, Date.now());
-    });
+  // constructor(public events: Events) {
+  //   events.subscribe('countly:notification', (notification: any, time: Date) => {
+  //     console.log(notification);
+  //   });
+  // }
+  // ionViewDidEnter(){
+  //   Countly.onNotification(function(notification: any){
+  //     this.events.publish('countly:notification', notification, Date.now());
+  //   });
+  // }
+  
+  constructor() {
+
   }
   makeid = function () {
     var text = "";
